@@ -1,0 +1,137 @@
+@font-face {
+  font-family: rudaw;
+  src: url(rudaw.ttf);
+  font-weight: bold;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    color: rgb(240,240,240);
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    font-family:rudaw;
+}
+
+header {
+    width: 95%;
+    max-width: 788px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 12px;
+    margin-top: 15px;
+}
+
+
+.share-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgb(240,240,240);
+}
+
+.share-button svg {
+    margin-left: 12px;
+    margin-top: 10px;
+    color: rgb(0,0,0);
+}
+
+.container {
+    width: 91%;
+    max-width: 680px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 20px;
+    margin-bottom: 30px;
+    cursor:wait;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(240,240,240);
+}
+
+.tile {
+    width: 100%;
+    background-color: rgb(0, 29, 50);
+    margin: 7px;
+    border-radius: 17px;
+    display:inherit;
+    justify-content: space-between;
+}
+
+.tile:hover {
+    transition: cubic-bezier(.07, 1.41, .82, 1.41) 0.2s;
+    transform: scale(1.02);
+    background: linear-gradient(0.25turn, #57606f, lightcyan);
+}
+
+.tile-share-button {
+    margin: 8px;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgb(0, 53, 102);
+}
+
+.tile-share-button svg {
+    margin-left: 12px;
+    margin-top: 10px;
+}
+
+
+.image-container {
+    margin-top: 24px;
+    display: block;
+    height: 96px;
+    width: 96px;
+    border-radius: 120px;
+    overflow: hidden;
+   
+}
+
+.image-container img {
+    height: 100%;
+}
+
+.icon {
+    margin: 4px 8px;
+    width: 44px;
+    height: 44px;
+}
+.contact{
+    padding: 5;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.contact li{
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+    box-shadow: var(--box-shadow);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.contact li:hover{
+    color: #fff;
+    background-image: var(--gradient);}
+.find ul a{
+    text-decoration: none;
+}
+.contact a{
+    text-decoration: none;
+}
